@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5C727501-03BB-4237-A38B-9061A5D18579}</ProjectGuid>
+    <ProjectGuid>{0DEEB723-9F84-4049-88A2-BD8CC5D1C549}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ConsoleView</RootNamespace>
@@ -32,10 +32,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject>
-    </StartupObject>
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -55,11 +51,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Controllers\Controllers.csproj">
-      <Project>{696f8090-5d97-461a-a4b2-abf28b4caa7a}</Project>
+      <Project>{9d9aeb04-a80c-4123-afb6-f19f32a14ec9}</Project>
       <Name>Controllers</Name>
     </ProjectReference>
     <ProjectReference Include="..\Modelos\Modelos.csproj">
-      <Project>{0ba5429b-9c23-479a-877b-c28edf70370c}</Project>
+      <Project>{37aa6d61-6025-485c-b264-e336c700662d}</Project>
       <Name>Modelos</Name>
     </ProjectReference>
   </ItemGroup>
