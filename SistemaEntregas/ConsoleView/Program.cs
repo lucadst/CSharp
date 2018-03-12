@@ -32,10 +32,10 @@ namespace ConsoleView
             Console.WriteLine("5 - Limpar Tela");
             Console.WriteLine("6 - Sair");
 
-            //return Convert.ToInt32(Console.ReadLine());
             string opcao = Console.ReadLine();
             return (OpcoesMenuPrincipal) int.Parse(opcao);
         }
+
         static void Main(string[] args)
         {
             OpcoesMenuPrincipal opcaoDigitada = 
@@ -69,12 +69,9 @@ namespace ConsoleView
                     default:
                         break;
                 }
-               
             } while (opcaoDigitada != OpcoesMenuPrincipal.Sair);
-            
         }
-
-        // Metodos Cliente
+        
         private static Cliente CadastrarCliente()
         {
             Cliente cli = new Cliente();
@@ -87,7 +84,6 @@ namespace ConsoleView
             Console.Write("Digite o cpf: ");
             cli.Cpf = Console.ReadLine();
 
-            // ... Endereco
             Endereco end = new Endereco();
 
             Console.Write("Digite o nome da rua: ");
@@ -110,7 +106,6 @@ namespace ConsoleView
 
         private static Cliente PesquisarCliente()
         {
-            // TODO : Fazer depois
             return new Cliente();
         }
 
@@ -128,7 +123,6 @@ namespace ConsoleView
             Console.WriteLine("Compl.: " + cliente._Endereco.Complemento);
             Console.WriteLine("-------------- ");
             Console.WriteLine();
-
         }
     }
 }
