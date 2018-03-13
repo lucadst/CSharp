@@ -78,7 +78,8 @@ namespace ConsoleView
             Console.WriteLine("Digite o id do cliente que deseja excluir: ");
             int idCliente = int.Parse(Console.ReadLine());
 
-
+            ClienteController cc = new ClienteController();
+            cc.ExcluirCliente(idCliente);
         }
 
         private static Cliente CadastrarCliente()
