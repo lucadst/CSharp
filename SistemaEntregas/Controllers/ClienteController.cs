@@ -23,5 +23,16 @@ namespace Controllers
             else
                 return null;
         }
+
+        public Cliente PesquisarPorID(int idCliente)
+        {
+            var c = from x in MeusClientes
+                    where x.PessoaID.Equals(idCliente)
+                    select x;
+            if (c != null)
+                return c.FirstOrDefault();
+            else
+                return null;
+        }
     }
 }
