@@ -61,6 +61,7 @@ namespace ConsoleView
                     case OpcoesMenuPrincipal.EditarCliente:
                         break;
                     case OpcoesMenuPrincipal.ExcluirCliente:
+                        ExcluirCliente();
                         break;
                     case OpcoesMenuPrincipal.LimparTela:
                         break;
@@ -71,7 +72,15 @@ namespace ConsoleView
                 }
             } while (opcaoDigitada != OpcoesMenuPrincipal.Sair);
         }
-        
+
+        private static void ExcluirCliente()
+        {
+            Console.WriteLine("Digite o id do cliente que deseja excluir: ");
+            int idCliente = int.Parse(Console.ReadLine());
+
+
+        }
+
         private static Cliente CadastrarCliente()
         {
             Cliente cli = new Cliente();
