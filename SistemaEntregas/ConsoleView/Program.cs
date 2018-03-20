@@ -169,10 +169,7 @@ namespace ConsoleView
                     ExibirDadosCliente(cli);
                 }
             }
-
             Console.WriteLine();
         }
-
-
     }
 }
